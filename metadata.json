@@ -1,0 +1,5 @@
+{
+  "name": "JSON DocuCraft",
+  "description": "A sophisticated tool that transforms raw JSON data into professional, well-formatted Word documents using Gemini AI to intelligently structure and summarize content.",
+  "requestFramePermissions": []
+}
