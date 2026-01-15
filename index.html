@@ -1,14 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DocuCraft AI - PDF Exam Creator</title>
+    
+    <!-- Scripts externos -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- html2pdf.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -24,14 +25,12 @@
         background: #cbd5e1;
         border-radius: 3px;
       }
-      /* Estilos para el modo edición */
       [contenteditable]:focus {
         outline: none;
         background-color: #f8fafc;
         border-radius: 4px;
         box-shadow: 0 0 0 2px #6366f1;
       }
-      /* Simulación de hoja A4 */
       .a4-page {
         min-height: 297mm;
         padding: 20mm;
@@ -40,19 +39,10 @@
         box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "@google/genai": "https://esm.sh/@google/genai@^1.36.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
